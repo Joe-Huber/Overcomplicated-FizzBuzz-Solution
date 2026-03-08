@@ -1,6 +1,8 @@
 package main.java;
 
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class FizzBuzz {
 
     public static void main(String[] args) {
@@ -19,33 +21,32 @@ public class FizzBuzz {
      * @input n The total number of lines printed
      */
     public static void fizzBuzz(int n) {
-        FizzRulePair[] defaultRules = {new FizzRulePair(3, "Fizz"), new FizzRulePair(5, "Buzz")};
+        FizzRulePair[] defaultRules = {new FizzRulePair(3, "Fizz", 1),
+                new FizzRulePair(5, "Buzz", 2)};
         fizzBuzzPrinter(defaultRules, n);
     }
     /*
      * Helper method for fizz buzz, handles logic
      */
     private static void fizzBuzzPrinter(FizzRulePair[] rules, int n) {
-        //Init structure
-        StringBuilder output = new StringBuilder();
-        HashMap<Integer, String> printRules = new HashMap<>();
-
-        //Fill in keys
-        int[] keys = new int[rules.length];
-        for(int i = 0; i < rules.length; i++) {
-            keys[i] = rules[i].key();
-            printRules.put(rules[i].key(), rules[i].value());
-        }
-
         for (int i = 1; i <= n; i++) {
-            for(int key: keys){
-                if(i % key == 0) {output.append(printRules.get(key));}
+            ArrayList<FizzRulePair> matchingRules = new ArrayList<>();
+            for (FizzRulePair rule : rules) {
+                if (i % rule.key() == 0) {
+                    matchingRules.add(rule);
+                }
             }
 
-            if(output.isEmpty()){System.out.println(i);}
-            else {System.out.println(output);}
-
-            output = new StringBuilder();
+            if (matchingRules.isEmpty()) {
+                System.out.println(i);
+            } else {
+                Collections.sort(matchingRules);
+                StringBuilder output = new StringBuilder();
+                for (FizzRulePair rule : matchingRules) {
+                    output.append(rule.value());
+                }
+                System.out.println(output);
+            }
         }
     }
 }
