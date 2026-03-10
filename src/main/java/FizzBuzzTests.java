@@ -3,6 +3,15 @@ package main.java;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+/**
+ * The FizzBuzzTests class contains test cases for validating the functionality of a FizzBuzz implementation.
+ * It performs automated tests to ensure correct behavior for a variety of boundary and edge cases.
+ * The framework uses the standard output stream to capture and verify the results of the FizzBuzz logic.
+ *
+ * @Author Joe Huber
+ * @Date March 10, 2026
+ * @Version 5.0
+ */
 public class FizzBuzzTests {
     public static void main(String[] args) {
         // Create a stream to hold the console output
@@ -15,6 +24,13 @@ public class FizzBuzzTests {
         standardRuleTests(ps, old, byteArrayOutputStream);
     }
 
+    /**
+     * Executes a series of predefined standard rule tests for the FizzBuzz implementation.
+     *
+     * @param ps The PrintStream to redirect and capture output during test execution.
+     * @param old The original PrintStream to restore output after test completion.
+     * @param byteArrayOutputStream The ByteArrayOutputStream used to capture the test output for verification.
+     */
     private static void standardRuleTests(PrintStream ps, PrintStream old, ByteArrayOutputStream byteArrayOutputStream){
         //Test 1 - Base 0 case
         TestChecker(baseZeroCase(ps, old, byteArrayOutputStream));
