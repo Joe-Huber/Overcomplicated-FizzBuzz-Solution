@@ -29,7 +29,7 @@ public class FizzBuzz {
      * @param args Command-line arguments passed to the program. These are not used in this implementation.
      */
     public static void main(String[] args) {
-        fizzBuzz(15);
+        fizzBuzz(2);
     }
 
     /**
