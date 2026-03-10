@@ -2,8 +2,8 @@ FROM eclipse-temurin:17
 
 WORKDIR /app
 
-COPY src/main/java/ .
+COPY src ./src
 
-RUN javac *.java
+RUN javac -d . src/main/java/*.java
 
-CMD ["java", "FizzBuzzTests"]
+CMD ["java", "main.java.FizzBuzzTests"]
