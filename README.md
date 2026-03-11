@@ -78,10 +78,6 @@ From the repository root:
 3) (Optional) Run the demo program
    java main.java.FizzBuzz
 
-Notes
-- The demo entry point currently calls fizzBuzz(2) just to show wiring works. Adjust locally as you like.
-- Tests intentionally cover base, boundary, and negative inputs (negative and zero produce no output).
-
 ## Example output (1..15)
 If you modify the demo to call fizzBuzz(15), the output would be:
 1
