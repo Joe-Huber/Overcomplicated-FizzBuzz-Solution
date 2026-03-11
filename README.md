@@ -105,7 +105,8 @@ FizzBuzz
 - .github/workflows/ci.yml
 
 ## Continuous Integration
-A GitHub Actions workflow (Java CI) builds a Docker image and runs the test suite on pushes and PRs to main. Badge is visible at the top of this README.
+A GitHub Actions workflow (Java CI) builds a Docker image and runs the test suite on pushes and PRs to main. 
+The Badge is visible at the top of this README.
 
 ## Extending rules
 Rules are currently created inside FizzBuzz.fizzBuzz. To experiment, you can change the defaultRules array in that method. For example, to add a rule for 7:
