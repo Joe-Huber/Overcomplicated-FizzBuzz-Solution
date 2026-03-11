@@ -109,7 +109,8 @@ A GitHub Actions workflow (Java CI) builds a Docker image and runs the test suit
 The Badge is visible at the top of this README.
 
 ## Extending rules
-Rules are currently created inside FizzBuzz.fizzBuzz. To experiment, you can change the defaultRules array in that method. For example, to add a rule for 7:
+Rules are currently created inside FizzBuzz.fizzBuzz. To experiment, you can change the defaultRules array in that
+method. For example, to add a rule for 7:
 - new FizzRule(7, "Bazz", 3)
 Make sure to give it an appropriate weight so the concatenation order matches your preference.
 
