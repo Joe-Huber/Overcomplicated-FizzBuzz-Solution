@@ -34,10 +34,11 @@
 ---
 
 ## Overview
-This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It showcases:
-- Clean separation of concerns with a tiny, comparable FizzRule type to define behavior.
-- Deterministic rule ordering via weights when multiple rules match the same number.
-- A lightweight, self‑contained test harness you can run locally or via Docker.
+This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It highlights a common 
+real-world pitfall: **without a defined scope, you have no idea how "quality" to make your solution.** 
+Should FizzBuzz be a couple if statements? A microservice? A distributed system with CI/CD, weighted rule engines, 
+and Dockerized test suites? Without requirements, all of those answers are equally valid, and equally absurd. 
+This project leans into the absurdity on purpose.
 
 ## How it works
 - FizzBuzz prints numbers from 1 to n.
