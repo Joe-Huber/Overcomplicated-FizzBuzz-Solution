@@ -34,10 +34,11 @@
 ---
 
 ## Overview
-This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It showcases:
-- Clean separation of concerns with a tiny, comparable FizzRule type to define behavior.
-- Deterministic rule ordering via weights when multiple rules match the same number.
-- A lightweight, self‑contained test harness you can run locally or via Docker.
+This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It highlights a common 
+real-world pitfall: **without a defined scope, you have no idea how "quality" to make your solution.** 
+Should FizzBuzz be a couple if statements? A microservice? A distributed system with CI/CD, weighted rule engines, 
+and Dockerized test suites? Without requirements, all of those answers are equally valid, and equally absurd. 
+This project leans into the absurdity on purpose.
 
 ## How it works
 - FizzBuzz prints numbers from 1 to n.
@@ -77,10 +78,6 @@ From the repository root:
 3) (Optional) Run the demo program
    java main.java.FizzBuzz
 
-Notes
-- The demo entry point currently calls fizzBuzz(2) just to show wiring works. Adjust locally as you like.
-- Tests intentionally cover base, boundary, and negative inputs (negative and zero produce no output).
-
 ## Example output (1..15)
 If you modify the demo to call fizzBuzz(15), the output would be:
 1
@@ -108,10 +105,12 @@ FizzBuzz
 - .github/workflows/ci.yml
 
 ## Continuous Integration
-A GitHub Actions workflow (Java CI) builds a Docker image and runs the test suite on pushes and PRs to main. Badge is visible at the top of this README.
+A GitHub Actions workflow (Java CI) builds a Docker image and runs the test suite on pushes and PRs to main. 
+The Badge is visible at the top of this README.
 
 ## Extending rules
-Rules are currently created inside FizzBuzz.fizzBuzz. To experiment, you can change the defaultRules array in that method. For example, to add a rule for 7:
+Rules are currently created inside FizzBuzz.fizzBuzz. To experiment, you can change the defaultRules array in that
+method. For example, to add a rule for 7:
 - new FizzRule(7, "Bazz", 3)
 Make sure to give it an appropriate weight so the concatenation order matches your preference.
 
