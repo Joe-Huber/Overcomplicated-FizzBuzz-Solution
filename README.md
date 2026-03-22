@@ -33,6 +33,19 @@
 
 ---
 
+## Table of Contents
+- [Overview](#overview)
+- [How it works](#how-it-works)
+- [Requirements](#requirements)
+- [Quick start](#quick-start)
+- [Example output (1..15)](#example-output-115)
+- [Project layout](#project-layout)
+- [Continuous Integration](#continuous-integration)
+- [Extending rules](#extending-rules)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Overview
 This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It highlights a common 
 real-world pitfall: **without a defined scope, you have no idea how "quality" to make your solution.** 
