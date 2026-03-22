@@ -49,7 +49,7 @@
 ## Overview
 This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It highlights a common 
 real-world pitfall: **without a defined scope, you have no idea how "quality" to make your solution.** 
-Should FizzBuzz be a couple if statements? A microservice? A distributed system with CI/CD, weighted rule engines, 
+Should FizzBuzz be a couple of if statements? A microservice? A distributed system with CI/CD, weighted rule engines, 
 and Dockerized test suites? Without requirements, all of those answers are equally valid, and equally absurd. 
 This project leans into the absurdity on purpose.
 
