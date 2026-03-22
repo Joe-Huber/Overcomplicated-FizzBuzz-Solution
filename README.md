@@ -34,17 +34,26 @@
 ---
 
 ## Table of Contents
+<details>
+  <summary><strong>Expand</strong></summary>
+
 - [Overview](#overview)
 - [How it works](#how-it-works)
-- [Requirements](#requirements)
-- [Quick start](#quick-start)
-- [Example output (1..15)](#example-output-115)
-- [Project layout](#project-layout)
-- [Continuous Integration](#continuous-integration)
-- [Extending rules](#extending-rules)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
+- Getting started
+  - [Requirements](#requirements)
+  - [Quick start](#quick-start)
+    - [Option A — Docker](#option-a-docker)
+    - [Option B — Local Java](#option-b-local-java)
+- Usage
+  - [Example output (1..15)](#example-output-115)
+  - [Extending rules](#extending-rules)
+  - [Troubleshooting](#troubleshooting)
+- Project
+  - [Project layout](#project-layout)
+  - [Continuous Integration](#continuous-integration)
+  - [Contributing](#contributing)
+  - [License](#license)
+</details>
 
 ## Overview
 This is an intentionally over‑engineered implementation of the classic FizzBuzz problem. It highlights a common 
@@ -76,6 +85,7 @@ Choose either setup:
 - OR Java 17+ (e.g., Eclipse Temurin 17)
 
 ## Quick start
+<a id="option-a-docker"></a>
 Option A — Docker
 1) Build the test image
 
@@ -89,6 +99,7 @@ docker build -t fizzbuzz-test .
 docker run --rm fizzbuzz-test
 ```
 
+<a id="option-b-local-java"></a>
 Option B — Local Java
 From the repository root:
 1) Compile
