@@ -78,21 +78,41 @@ Choose either setup:
 ## Quick start
 Option A — Docker
 1) Build the test image
-   docker build -t fizzbuzz-test .
+
+```bash
+docker build -t fizzbuzz-test .
+```
+
 2) Run the test suite (container exits non‑zero on failures)
-   docker run --rm fizzbuzz-test
+
+```bash
+docker run --rm fizzbuzz-test
+```
 
 Option B — Local Java
 From the repository root:
 1) Compile
-   javac -d . src/main/java/*.java
+
+```bash
+javac -d . src/main/java/*.java
+```
+
 2) Run tests
-   java main.java.FizzBuzzTests
+
+```bash
+java main.java.FizzBuzzTests
+```
+
 3) (Optional) Run the demo program
-   java main.java.FizzBuzz
+
+```bash
+java main.java.FizzBuzz
+```
 
 ## Example output (1..15)
 If you modify the demo to call fizzBuzz(15), the output would be:
+
+```text
 1
 2
 Fizz
@@ -108,6 +128,7 @@ Fizz
 13
 14
 FizzBuzz
+```
 
 ## Project layout
 - src/main/java/FizzBuzz.java
