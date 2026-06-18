@@ -1,0 +1,52 @@
+name: Feature request
+description: Suggest an improvement, new rule behavior, or project change.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Small, well-scoped changes are easiest to review.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What would you like to change or add?
+      placeholder: Describe the proposed change in a sentence or two.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why would this be useful for the project?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How do you imagine this working?
+      placeholder: Include examples, expected output, or rule behavior if relevant.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Are there simpler approaches or tradeoffs worth noting?
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing notes
+      description: What tests or examples should cover this change?
+      placeholder: Mention expected updates to FizzBuzzTests, README examples, or Docker-based checks.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add anything else that might help.
