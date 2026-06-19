@@ -66,10 +66,6 @@ public class FizzBuzzTests {
         TestChecker(baseTwoHundredFiftySix(ps, old, byteArrayOutputStream));
     }
 
-    private static void customRuleTests(){
-
-    }
-
     private static TestResult baseZeroCase(PrintStream ps, PrintStream old, ByteArrayOutputStream byteArrayOutputStream){
         String testName = "Test 1 - Base 0 case";
         String expectedOutput = "";
