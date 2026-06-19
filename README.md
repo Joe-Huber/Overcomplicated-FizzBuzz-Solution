@@ -166,6 +166,7 @@ Make sure to give it an appropriate weight so the concatenation order matches yo
 
 ## Contributing
 Issues and PRs welcome! This project is for fun and learning—clear test coverage and small, focused changes are appreciated.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, testing, and pull request guidance.
 
 ## License
 This project is licensed under the MIT License — see the LICENSE file for details.
