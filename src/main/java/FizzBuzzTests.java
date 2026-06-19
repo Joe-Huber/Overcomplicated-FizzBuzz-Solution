@@ -57,13 +57,13 @@ public class FizzBuzzTests {
         TestChecker(baseNegativeOneCase(ps, old, byteArrayOutputStream));
 
         //Test 9 - Base -100 case
-        TestChecker(baseNegativeOneHunderedCase(ps, old, byteArrayOutputStream));
+        TestChecker(baseNegativeOneHundredCase(ps, old, byteArrayOutputStream));
 
         //Test 10 - Base -5 case
         TestChecker(baseNegativeFiveCase(ps, old, byteArrayOutputStream));
 
         //Test 11 - Base 256 case
-        TestChecker(baseTwoHunderedFiftySix(ps, old, byteArrayOutputStream));
+        TestChecker(baseTwoHundredFiftySix(ps, old, byteArrayOutputStream));
     }
 
     private static void customRuleTests(){
@@ -133,7 +133,7 @@ public class FizzBuzzTests {
         return standardTester(ps, old, byteArrayOutputStream, testName, input, expectedOutput);
     }
 
-    private static TestResult baseNegativeOneHunderedCase(PrintStream ps, PrintStream old, ByteArrayOutputStream byteArrayOutputStream) {
+    private static TestResult baseNegativeOneHundredCase(PrintStream ps, PrintStream old, ByteArrayOutputStream byteArrayOutputStream) {
         String testName = "Test 9 - Base -100 case";
         String expectedOutput = "";
         int input = -100;
@@ -147,7 +147,7 @@ public class FizzBuzzTests {
         return standardTester(ps, old, byteArrayOutputStream, testName, input, expectedOutput);
     }
 
-    private static TestResult baseTwoHunderedFiftySix(PrintStream ps, PrintStream old, ByteArrayOutputStream byteArrayOutputStream) {
+    private static TestResult baseTwoHundredFiftySix(PrintStream ps, PrintStream old, ByteArrayOutputStream byteArrayOutputStream) {
         String testName = "Test 11 - Base 256 case";
         String expectedOutput = "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz" +
                 "\n16\n17\nFizz\n19\nBuzz\nFizz\n22\n23\nFizz\nBuzz\n26\nFizz\n28\n29\nFizzBuzz" +
