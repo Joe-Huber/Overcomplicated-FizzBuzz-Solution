@@ -22,6 +22,7 @@ import java.util.Collections;
  * @Version 5.0
  */
 public class FizzBuzz {
+    private final static int startBound = 1;
 
     /**
      * The entry point of the application, demonstrating the execution of the FizzBuzz logic.
@@ -62,7 +63,7 @@ public class FizzBuzz {
      * @param n     The upper limit of the range (inclusive). Specifies the maximum number to iterate through from 1.
      */
     private static void fizzBuzzPrinter(FizzRule[] rules, int n) {
-        for (int i = 1; i <= n; i++) {
+        for (int i = startBound; i <= n; i++) {
             ArrayList<FizzRule> matchingRules = new ArrayList<>();
             for (FizzRule rule : rules) {
                 if (i % rule.key() == 0) {
