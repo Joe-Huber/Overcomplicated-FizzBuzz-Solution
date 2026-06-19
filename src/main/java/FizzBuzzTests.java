@@ -180,11 +180,7 @@ public class FizzBuzzTests {
         FizzBuzz.fizzBuzz(input);
         String output = byteArrayOutputStream.toString();
 
-        if (!output.equals(expectedOutput)) {
-            result = new TestResult(testName, false, expectedOutput, output);
-        } else {
-            result = new TestResult(testName, true, expectedOutput, output);
-        }
+        result = new TestResult(testName, output.equals(expectedOutput), expectedOutput, output);
 
         // Put things back
         System.out.flush();
